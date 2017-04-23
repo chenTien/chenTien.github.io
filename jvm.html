@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<meta charset="GBK">
+<meta charset="UTF-8">
 <title>jvm</title>
 <link rel="shortcut icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -51,11 +51,11 @@
                             </a>
                             <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
                                 
-<strong>�����������</strong><br>
-     &nbsp&nbsp ���߳�˽�У������洢����cpu����ʱ��Ƭ��ʱ�� �ǵ�ǰ�߳���ִ���ֽ�����к�ָʾ�����ֽ������������ʱ�����ڸı��������ֵ�����ָ���ִ�У���֧����ת��ѭ�����쳣�������ָ̻߳��ȡ����̵߳�ʱ��Ƭ��תҲ��Ҫ����ִ�е���Java���������¼����������ֽ���ָ���ַ��Native������Ϊundefined��Ψһ�����׳�OOM�ط���<br><br>
+<strong>程序计数器：</strong><br>
+     &nbsp&nbsp 各线程私有，独立存储。在cpu分配时间片的时候， 是当前线程在执行字节码的行号指示器。字节码解释器工作时依赖于改变计数器的值来完成指令的执行，分支，跳转，循环，异常处理，线程恢复等。多线程的时间片轮转也需要。如执行的是Java方法，则记录的是虚拟机字节码指令地址。Native方法则为undefined（唯一不会抛出OOM地方）<br><br>
 
-<strong> �����ջ��</strong><br>
-    &nbsp&nbsp �߳�˽�У�Java����ִ�е��ڴ�ģ�͡�ջ֡��Stack Frame����ÿһ����ִ��ջ֡��ջ��ջ��<br><br>
+<strong> 虚拟机栈：</strong><br>
+    &nbsp&nbsp 线程私有，Java方法执行的内存模型。栈帧（Stack Frame），每一方法执行栈帧入栈出栈。<br><br>
                   
                             </div>
                         </div>
@@ -95,7 +95,7 @@
         <a class="f-categories-filter_name" href="phone.html"><i class="fa fa-plus"></i> Interview Question</a>
     </li>
      <li>
-        <a class="f-categories-filter_name" href="three_represents_theory.html"><i class="fa fa-plus"></i> �������� </a>
+        <a class="f-categories-filter_name" href="three_represents_theory.html"><i class="fa fa-plus"></i> 三个代表 </a>
     </li>
     <li>
         <a class="f-categories-filter_name" href="index.html"><i class="fa fa-plus"></i> Home Page </a>
